@@ -1,0 +1,10 @@
+<h1>Registeration Step 3</h1>
+
+<h4>first name: <%=user.firstname%></h4>
+<h4>last name: <%=user.lastname%></h4>
+<h4>Email: <%=user.email%></h4>
+<form method="post" action="/completeregisteration/<%=user._id%>">
+    <input type="text" name="role" placeholder="role"/>
+    <input type="text" name="password" placeholder="password">
+    <input type="submit"/>
+</form>

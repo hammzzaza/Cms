@@ -1,0 +1,20 @@
+<h1><%=title%></h1>
+<br><br><br><br>
+<% if (check && user.accountRole=="accountsAdmin") { %>
+<a href="/connect-gsuite/authorize">Connect Google</a>
+<a href="/connect-Azure/authorize">Connect Azure</a>
+<br><br><br><br>
+<% }%>
+<% if (!check) { %>
+<a href="/google-signin">Use Google</a>
+<a href="/signinoffice">Use Outlook</a>
+<br><br>
+<br><br>
+<h3>Local Sign In</h3>
+<form method="post" action="/login">
+    <input type="email" name="email" placeholder="email"/>
+    <input type="text" name="password" placeholder="password"/>
+    <input type="submit"/>
+</form>
+
+<% }%>

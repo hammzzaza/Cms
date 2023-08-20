@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "4c0805a6-e426-443a-ab20-b6e1f1601415",
+		"name": "Services",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/service",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "service 1",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "g suite",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this is the description",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/service",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"service"
+					]
+				},
+				"description": "adding a service"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/service",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/service",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"service"
+					]
+				},
+				"description": "retrieving list of services"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/service/5c9cb6b7e3457f1924b2425c",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "service 1",
+							"type": "text"
+						},
+						{
+							"key": "provider",
+							"value": "gsuite",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this is testt update",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/service/5c9cb6b7e3457f1924b2425c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"service",
+						"5c9cb6b7e3457f1924b2425c"
+					]
+				},
+				"description": "update a service"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/service/5c9cb6b7e3457f1924b2425c/apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/service/5c9cb6b7e3457f1924b2425c/apps",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"service",
+						"5c9cb6b7e3457f1924b2425c",
+						"apps"
+					]
+				},
+				"description": "getting lists of apps registered to a service."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/service/5c9cb6b7e3457f1924b2425c/licenses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/service/5c9cb6b7e3457f1924b2425c/licenses",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"service",
+						"5c9cb6b7e3457f1924b2425c",
+						"licenses"
+					]
+				},
+				"description": "getting list of licenses registered to a service."
+			},
+			"response": []
+		}
+	]
+}

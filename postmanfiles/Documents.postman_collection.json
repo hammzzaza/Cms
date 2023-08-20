@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "2382fd1e-5897-43a9-af11-c658bb7c093f",
+		"name": "Documents",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/documents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/documents",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"documents"
+					]
+				},
+				"description": "fetch docs"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/documents",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "forappasd",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "asdkjh",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "www.asd.com",
+							"type": "text"
+						},
+						{
+							"key": "iconurl",
+							"value": "wwww.scs.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/documents",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"documents"
+					]
+				},
+				"description": "create new doc"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/documents/5cacaaaac310093260eec5dc",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "updae",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "asdkjh",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "www.asd.com",
+							"type": "text"
+						},
+						{
+							"key": "iconurl",
+							"value": "wwww.scs.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/documents/5cacaaaac310093260eec5dc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"documents",
+						"5cacaaaac310093260eec5dc"
+					]
+				},
+				"description": "update document"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/documents/5cacab1284469c05f838b1ec",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/documents/5cacab1284469c05f838b1ec",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"documents",
+						"5cacab1284469c05f838b1ec"
+					]
+				},
+				"description": "delete document\n"
+			},
+			"response": []
+		}
+	]
+}

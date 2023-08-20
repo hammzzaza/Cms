@@ -1,0 +1,412 @@
+{
+	"info": {
+		"_postman_id": "f5acba52-cb5f-4d0d-a501-6700ab65ccca",
+		"name": "Accounts",
+		"description": "This registers a demo account for accountsAdmin for debugging process",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/accountslogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "guseradmin@gidp.itablera.se",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					]
+				},
+				"description": "Accounts Login. Needs to be called before making any api requests."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/accounts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts"
+					]
+				},
+				"description": "Retrieve the current account's information"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/accounts",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "",
+							"description": "the accounts name",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"description": "any description",
+							"type": "text"
+						},
+						{
+							"key": "vatNumber",
+							"value": "",
+							"description": "the vatNumber of an account",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "",
+							"description": "address field 1 ",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "",
+							"description": "addressfield 2",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "",
+							"description": "the account belongs to which city",
+							"type": "text"
+						},
+						{
+							"key": "zip",
+							"value": "",
+							"description": "zip code",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "",
+							"description": "country code. 2 digits",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/accounts",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts"
+					]
+				},
+				"description": "Add a new account."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/accounts/:accountid",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "",
+							"description": "the accounts name",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"description": "any description",
+							"type": "text"
+						},
+						{
+							"key": "vatNumber",
+							"value": "",
+							"description": "the vatNumber of an account",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "",
+							"description": "address field 1 ",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "",
+							"description": "addressfield 2",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "",
+							"description": "the account belongs to which city",
+							"type": "text"
+						},
+						{
+							"key": "zip",
+							"value": "",
+							"description": "zip code",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "",
+							"description": "country code. 2 digits",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/accounts/:accountid",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						":accountid"
+					],
+					"variable": [
+						{
+							"key": "accountid",
+							"value": ""
+						}
+					]
+				},
+				"description": "for suspending all the users belonging to that account."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/accounts/:accountid",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/accounts/:accountid",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						":accountid"
+					],
+					"variable": [
+						{
+							"key": "accountid",
+							"value": ""
+						}
+					]
+				},
+				"description": "the deleting account methods puts all the users belonging to that account to pending deletion"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/accounts/5c9c96ebe17a0a362c2d1f38/licenses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/accounts/5c9c96ebe17a0a362c2d1f38/licenses",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"5c9c96ebe17a0a362c2d1f38",
+						"licenses"
+					]
+				},
+				"description": "get list of licenses for an account"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/accounts/5c9c96ebe17a0a362c2d1f38/apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/accounts/5c9c96ebe17a0a362c2d1f38/apps",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"5c9c96ebe17a0a362c2d1f38",
+						"apps"
+					]
+				},
+				"description": "get list of apps for an account"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/accounts/5c9c96ebe17a0a362c2d1f38/services",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/accounts/5c9c96ebe17a0a362c2d1f38/services",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"5c9c96ebe17a0a362c2d1f38",
+						"services"
+					]
+				},
+				"description": "get list of services of the account\n"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/accounts/5cab5ae7846a3e20842a93c2/mylicensescount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/accounts/5cab5ae7846a3e20842a93c2/mylicensescount",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"accounts",
+						"5cab5ae7846a3e20842a93c2",
+						"mylicensescount"
+					]
+				},
+				"description": "get count of licenses assigned to my account"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "47df1f7d-ac83-45e6-ac44-1b5946b16110",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "ad2a6d15-a75a-4bcd-bca5-ea2800ecced6",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "6efa6469-f23f-45fc-b0e4-5e9cd04aa4b7",
+			"key": "username",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "82c15739-a85f-40ad-9f4e-b95653a995b9",
+			"key": "password",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

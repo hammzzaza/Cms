@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "b338c945-c2d7-4cbe-92ee-271305358368",
+		"name": "Licenses",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/license",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "azure premium",
+							"description": "select any name",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "azure all premium operations",
+							"description": "choose description",
+							"type": "text"
+						},
+						{
+							"key": "unit",
+							"value": "unit test",
+							"type": "text"
+						},
+						{
+							"key": "period",
+							"value": "month",
+							"type": "text"
+						},
+						{
+							"key": "minUsers",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "maxUsers",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "renewPeriod",
+							"value": "year",
+							"type": "text"
+						},
+						{
+							"key": "serviceId",
+							"value": "5c9f0268ef61262f3cd3ede8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/license",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"license"
+					]
+				},
+				"description": "This adds a new license into the apps database"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/license",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/license",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"license"
+					]
+				},
+				"description": "retrieves lists of licenses."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/license/5c84c9a594e1ec29fc7fc547",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "licensename",
+							"description": "select any name",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this is the description",
+							"description": "choose description",
+							"type": "text"
+						},
+						{
+							"key": "unit",
+							"value": "unit test update",
+							"type": "text"
+						},
+						{
+							"key": "period",
+							"value": "month",
+							"type": "text"
+						},
+						{
+							"key": "minUsers",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "maxUsers",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "renewPeriod",
+							"value": "year",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/license/5c84c9a594e1ec29fc7fc547",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"license",
+						"5c84c9a594e1ec29fc7fc547"
+					]
+				},
+				"description": "updating a license by its id."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/license/5c84ca3894e1ec29fc7fc548",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/license/5c84ca3894e1ec29fc7fc548",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"license",
+						"5c84ca3894e1ec29fc7fc548"
+					]
+				},
+				"description": "deletes a license with id"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/license/5c84ca4e8058e42e38ef8584/app/5c84d4fa8058e42e38ef8585",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/license/5c84ca4e8058e42e38ef8584/app/5c84d4fa8058e42e38ef8585",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"license",
+						"5c84ca4e8058e42e38ef8584",
+						"app",
+						"5c84d4fa8058e42e38ef8585"
+					]
+				},
+				"description": "Adds an app to a license.\n\nlicense/:licenseid/app/:appid\n\nlicenseid is _id from license schema.\nappid is _id from app schema"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/license/5c84ca4e8058e42e38ef8584/app/5c84d4fa8058e42e38ef8585",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/license/5c84ca4e8058e42e38ef8584/app/5c84d4fa8058e42e38ef8585",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"license",
+						"5c84ca4e8058e42e38ef8584",
+						"app",
+						"5c84d4fa8058e42e38ef8585"
+					]
+				},
+				"description": "Removes an app from a license.\n\nlicense/:licenseid/app/:appid\n\nlicenseid is _id from license schema.\nappid is _id from app schema"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/license/5c84ca4e8058e42e38ef8584/tag/5c84e248532bc712489e282a",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/license/5c84ca4e8058e42e38ef8584/tag/5c84e248532bc712489e282a",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"license",
+						"5c84ca4e8058e42e38ef8584",
+						"tag",
+						"5c84e248532bc712489e282a"
+					]
+				},
+				"description": "Saves a tag to a license.\n\nlicense/:licenseid/tag/:tagid\n\nlicenseid is _id from license schema\ntagid is _id from tags schema"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/license/5c84ca4e8058e42e38ef8584/tag/5c84e248532bc712489e282a",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/license/5c84ca4e8058e42e38ef8584/tag/5c84e248532bc712489e282a",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"license",
+						"5c84ca4e8058e42e38ef8584",
+						"tag",
+						"5c84e248532bc712489e282a"
+					]
+				},
+				"description": "removes a tag from license\n\n/license/:licenseid/tags/:tagid\n\nlicenseid is _id from license schema\ntagid is _id from tag schema"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/license/5c9f4da6b1f14a1ba0517d95/apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/license/5c9f4da6b1f14a1ba0517d95/apps",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"license",
+						"5c9f4da6b1f14a1ba0517d95",
+						"apps"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

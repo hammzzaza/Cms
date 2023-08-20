@@ -1,0 +1,567 @@
+{
+	"info": {
+		"_postman_id": "ae9bcafb-fe65-4a87-9fb5-67c8e46f02ba",
+		"name": "Users",
+		"description": "UsersDirectory Schema on the application database. Will change the name to users.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/users/api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/users/api",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"api"
+					]
+				},
+				"description": "Retrieving list of users from gsuite and adding in usersDirectory schema in the database."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "retrieving list of users"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "familyName",
+							"value": "Ali",
+							"type": "text"
+						},
+						{
+							"key": "givenName",
+							"value": "M Hamza",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "hamza.ali@midp.itablera.se",
+							"description": "domain would be hardcoded as the accounts domain during front end deployment",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				},
+				"description": "Adding a user in usersDirectory as well as in G suite.\nthe password is always \"qweasdzxc\" for now. a random password would be generated while deployment and the password can be mailed to that user."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/109379847957151048384",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "familyName",
+							"value": "Admn",
+							"type": "text"
+						},
+						{
+							"key": "givenName",
+							"value": "Paul",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "guseradmin@gidp.itablera.se",
+							"description": "domain would be hardcoded as the accounts domain during front end deployment",
+							"type": "text"
+						},
+						{
+							"key": "accountRole",
+							"value": "accountsAdmin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/users/5cab5ad3846a3e20842a93c1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"5cab5ad3846a3e20842a93c1"
+					]
+				},
+				"description": "Updating a user. More parameters would be added while adding or updating a user.\n/users/:userid\n\nthe userid is the id from userDirectory schema."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/109379847957151048384",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/users/109379847957151048384",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"109379847957151048384"
+					]
+				},
+				"description": "users/:userid\nthis updates the user status to pending deletion"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/5c84da8ce7507a3754502fc2/app/5c84d4fa8058e42e38ef8585",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/users/5c84da8ce7507a3754502fc2/app/5c84d4fa8058e42e38ef8585",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"5c84da8ce7507a3754502fc2",
+						"app",
+						"5c84d4fa8058e42e38ef8585"
+					]
+				},
+				"description": "Assigning an app to a user.\n/users/:userid/apps/:appid\n\nuserid is _id from userDirectory schema.\nappid is _id from apps schema"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/5c84da8ce7507a3754502fc2/app/5c84d4fa8058e42e38ef8585",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/users/5c84da8ce7507a3754502fc2/app/5c84d4fa8058e42e38ef8585",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"5c84da8ce7507a3754502fc2",
+						"app",
+						"5c84d4fa8058e42e38ef8585"
+					]
+				},
+				"description": "Removing an app from users directory.\n/users/:userid/apps/:appid\n\nuserid is _id from userDirectory schema.\nappid is _id from apps schema"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/5c84da8ce7507a3754502fc2/license/5c84ca4e8058e42e38ef8584",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/users/5cab5ad3846a3e20842a93c1/license/5c84ca4e8058e42e38ef8584",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"5cab5ad3846a3e20842a93c1",
+						"license",
+						"5c84ca4e8058e42e38ef8584"
+					]
+				},
+				"description": "Assigning a license to a user.\n\n/users/:userid/license/:licenseid\n\nuserid is _id of userDirectory schema. licenseid is _id of license schema."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/5c84da8ce7507a3754502fc2/license/5c84ca4e8058e42e38ef8584",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/users/5c84da8ce7507a3754502fc2/license/5c84ca4e8058e42e38ef8584",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"5c84da8ce7507a3754502fc2",
+						"license",
+						"5c84ca4e8058e42e38ef8584"
+					]
+				},
+				"description": "Removing a license from a user.\n\n/users/:userid/license/:licenseid\n\nuserid is _id of userDirectory schema. licenseid is _id of license schema."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/109379847957151048384/suspend",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/users/109379847957151048384/suspend",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"109379847957151048384",
+						"suspend"
+					]
+				},
+				"description": "users/:id/suspend\nid is the id from usersDirectory.\nSuspends the following user.\nchanges status to pendingSuspension"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/109379847957151048384/resetpassword",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/users/109379847957151048384/resetpassword",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"109379847957151048384",
+						"resetpassword"
+					]
+				},
+				"description": "users/:id/resetpassword\nid is \"id\" from usersSchema.\n\nThis changes the field changePasswordAtNextLogin to true in gsuite.\nso when the user logs in the next time. he will be asked to change his password."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/109379847957151048384/groups",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/users/109379847957151048384/groups",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"109379847957151048384",
+						"groups"
+					]
+				},
+				"description": "this retrieves the list of the groups that the user has been assigned to.\n/users/:id/groups\nthe id is userid from userWithGroup schema."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/5c9c96b7e17a0a362c2d1f37/assignapp",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Azuree",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Azureee chat",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "testing purposes",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "www.google.com",
+							"type": "text"
+						},
+						{
+							"key": "signInUrl",
+							"value": "accounts.google.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl1",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl2",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl3",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl4",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "serviceId",
+							"value": "5c9f0268ef61262f3cd3ede8",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/users/5cab5ad3846a3e20842a93c1/assignapp",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"5cab5ad3846a3e20842a93c1",
+						"assignapp"
+					]
+				},
+				"description": "List Apps that can be assigned to the user."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/5ca85557c6267e29d4d2d41c/apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/users/5cab5ad3846a3e20842a93c1/apps",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"5cab5ad3846a3e20842a93c1",
+						"apps"
+					]
+				},
+				"description": "get my assigned apps"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/users/5caa22740bcc962c48be451d/license",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/users/5cab5ad3846a3e20842a93c1/license",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"5cab5ad3846a3e20842a93c1",
+						"license"
+					]
+				},
+				"description": "get list of user assigned licenses"
+			},
+			"response": []
+		}
+	]
+}
