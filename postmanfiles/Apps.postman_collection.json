@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "e98151dc-0cbf-4ded-a143-136997f3e00f",
+		"name": "Apps",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/apps",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/apps",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apps"
+					]
+				},
+				"description": "retrieving list of apps."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/apps/5c84d4fa8058e42e38ef8585",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "test app",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "testing app updated",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "testing purposes",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "www.google.com",
+							"type": "text"
+						},
+						{
+							"key": "signInUrl",
+							"value": "accounts.google.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl1",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl2",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl3",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl4",
+							"value": "www.test.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/apps/5c84d4fa8058e42e38ef8585",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apps",
+						"5c84d4fa8058e42e38ef8585"
+					]
+				},
+				"description": "apps/:id\nthe id is the _id of apps schema"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/apps/5c84d5b14a08091bb471b707",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "test app",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "testing app updated",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "testing purposes",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "www.google.com",
+							"type": "text"
+						},
+						{
+							"key": "signInUrl",
+							"value": "accounts.google.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl1",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl2",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl3",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl4",
+							"value": "www.test.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/apps/5c84d5b14a08091bb471b707",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apps",
+						"5c84d5b14a08091bb471b707"
+					]
+				},
+				"description": "Deleting an app.\napps/:id\nthe id is the _id of apps schema."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/apps",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "description",
+							"value": "of service trello",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "testing purposes",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "www.google.com",
+							"type": "text"
+						},
+						{
+							"key": "signInUrl",
+							"value": "accounts.google.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl1",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl2",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl3",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl4",
+							"value": "www.test.com",
+							"type": "text"
+						},
+						{
+							"key": "serviceId",
+							"value": "5c9f0268ef61262f3cd3ede8",
+							"type": "text"
+						},
+						{
+							"key": "licenseid",
+							"value": "5c9f4da6b1f14a1ba0517d95",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "trello",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/apps",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apps"
+					]
+				},
+				"description": "add app\n"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/apps/5ca1f66f3f11a51b94740537/licenses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/apps/5ca1f66f3f11a51b94740537/licenses",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apps",
+						"5ca1f66f3f11a51b94740537",
+						"licenses"
+					]
+				},
+				"description": "get licenses that app enables"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/apps/5cab5d38724ab415e8250bb2/assignments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/apps/5cab5d38724ab415e8250bb2/assignments",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apps",
+						"5cab5d38724ab415e8250bb2",
+						"assignments"
+					]
+				},
+				"description": "get my assignments"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/apps/5cab5d3c724ab415e8250bb3/information",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "text1",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "text2",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "document1",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "document2",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "document3",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "formurl",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "docurl",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "faqurl",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/apps/5cab5d3c724ab415e8250bb3/information",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apps",
+						"5cab5d3c724ab415e8250bb3",
+						"information"
+					]
+				},
+				"description": "need to be logged in."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/apps/5cab5d3c724ab415e8250bb3/information",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/apps/5cab5d3c724ab415e8250bb3/information",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"apps",
+						"5cab5d3c724ab415e8250bb3",
+						"information"
+					]
+				},
+				"description": "get app info"
+			},
+			"response": []
+		}
+	]
+}

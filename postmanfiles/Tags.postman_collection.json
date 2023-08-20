@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "143aca67-74f7-4249-bd0f-a95a8f4316d8",
+		"name": "Tags",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/tags",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "node",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "webdevelopment",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "license",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl",
+							"value": "www.google.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/tags",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tags"
+					]
+				},
+				"description": "Adding a tag."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/tags/5c84e1c6532bc712489e2829",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "node update",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "webdevelopment",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "license",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl",
+							"value": "www.google.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/tags/5c84e1c6532bc712489e2829",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tags",
+						"5c84e1c6532bc712489e2829"
+					]
+				},
+				"description": "Updating a tag.\n/tags/:tagid\nthe tagid is _id from tags schema"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/tags",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "node update",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "webdevelopment",
+							"type": "text"
+						},
+						{
+							"key": "type",
+							"value": "license",
+							"type": "text"
+						},
+						{
+							"key": "iconUrl",
+							"value": "www.google.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/tags",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tags"
+					]
+				},
+				"description": "retrieving list of tags"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/tags/5c84e1c6532bc712489e2829",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/tags/5c84e1c6532bc712489e2829",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tags",
+						"5c84e1c6532bc712489e2829"
+					]
+				},
+				"description": "removing a tag.\r\n/tags/:tagid\r\nthe tagid is _id from tags schema"
+			},
+			"response": []
+		}
+	]
+}

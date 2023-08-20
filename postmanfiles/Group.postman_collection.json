@@ -1,0 +1,482 @@
+{
+	"info": {
+		"_postman_id": "5256343a-c392-44ae-8585-7a97c6cee51e",
+		"name": "Group",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3000/group",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/group",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group"
+					]
+				},
+				"description": "retrieve the list of groups."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "tessttt@gidp.itablera.se",
+							"description": "the domain remains the same for accounts admin's account",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "this is a test group",
+							"description": "select any name",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this is the description",
+							"description": "choose description",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/group",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group"
+					]
+				},
+				"description": "saving a new group in the g suite as well as in the application's database collection."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group/api",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/group/api",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"api"
+					]
+				},
+				"description": "This retrieves the list of groups from the g suite api."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group/01tuee742hoc32n",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "tessttt@gidp.itablera.se",
+							"description": "the domain remains the same for accounts admin's account",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "this is a updated group",
+							"description": "select any name",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "this is the description",
+							"description": "choose description",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/group/01tuee742hoc32n",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"01tuee742hoc32n"
+					]
+				},
+				"description": "The group id is the id of the group from g suite. the id is saved in group collection by variable \"id\". The following endpoint updates the following group."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group/01tuee742hoc32n",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/group/01tuee742hoc32n",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"01tuee742hoc32n"
+					]
+				},
+				"description": "Deletes the group from gsuite as well as from application's database. pass group id."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group/01baon6m4gjkerq/user/114966570442571573858",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/group/5cab5b50846a3e20842a93c7/user/5cab5b50846a3e20842a93c7",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"5cab5b50846a3e20842a93c7",
+						"user",
+						"5cab5b50846a3e20842a93c7"
+					]
+				},
+				"description": "/group/:groupid/user/:userid\nThis saves the user to the group in g suite as well as adds information about user in userGroup schema."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group/5c84bc0fdb00413228e8f725/license/5c84ca4e8058e42e38ef8584",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/group/5cab5b5a846a3e20842a93c9/license/5cab5c85724ab415e8250bab",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"5cab5b5a846a3e20842a93c9",
+						"license",
+						"5cab5c85724ab415e8250bab"
+					]
+				},
+				"description": "Adding a license to a group.\n/group/:groupid/license/:licenseid\n\ngroupid is _id of group schema.\nlicenseid is _id of license schema."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group/5c84bc0fdb00413228e8f725/license/5c84ca4e8058e42e38ef8584",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/group/5c84bc0fdb00413228e8f725/license/5c84ca4e8058e42e38ef8584",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"5c84bc0fdb00413228e8f725",
+						"license",
+						"5c84ca4e8058e42e38ef8584"
+					]
+				},
+				"description": "Deleting a license from a group.\ngroup/:groupid/license/:licenseid\ngroupid is _id of group schema.\nlicenseid is _id of license schema."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group/5c84bc0fdb00413228e8f725/app/5c84d4fa8058e42e38ef8585",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/group/5cab5b5a846a3e20842a93c9/app/5cab5d34724ab415e8250bb1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"5cab5b5a846a3e20842a93c9",
+						"app",
+						"5cab5d34724ab415e8250bb1"
+					]
+				},
+				"description": "Adding app to a group.\n/group/:groupid/app/:appid\n\nthe groupid is _id of group schema.\nthe appid is _id of app schema."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group/5c84bc0fdb00413228e8f725/app/5c84d4fa8058e42e38ef8585",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/group/5c84bc0fdb00413228e8f725/app/5c84d4fa8058e42e38ef8585",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"5c84bc0fdb00413228e8f725",
+						"app",
+						"5c84d4fa8058e42e38ef8585"
+					]
+				},
+				"description": "Removing an app from a group.\n/group/:groupid/app/:appid\n\nthe groupid is _id of group schema.\nthe appid is _id of app schema."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group/01baon6m4gjkerq/user/113589847587243809250",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/group/01baon6m4gjkerq/user/113589847587243809250",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"01baon6m4gjkerq",
+						"user",
+						"113589847587243809250"
+					]
+				},
+				"description": "Deleting a user from a group.\n/group/:groupid/user/:userid\ngroupid is the \"id\" variable from group schema.\nuserid is the \"id\" variable from userdirectory schema."
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/groupmembers/api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/groupmembers/api",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"groupmembers",
+						"api"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group/5c9c9758e17a0a362c2d1f3b/assignapp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/group/5cab5b5a846a3e20842a93c9/assignapp",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"5cab5b5a846a3e20842a93c9",
+						"assignapp"
+					]
+				},
+				"description": "get list of apps that can be assigned to a group"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group/5caaf29ede166327a4b876b5/apps",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/group/5cab5b5a846a3e20842a93c9/apps",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"5cab5b5a846a3e20842a93c9",
+						"apps"
+					]
+				},
+				"description": "get group apps"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3000/group/5cab5b5a846a3e20842a93c9/mymembers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/group/5cab5b5a846a3e20842a93c9/mymembers",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"group",
+						"5cab5b5a846a3e20842a93c9",
+						"mymembers"
+					]
+				},
+				"description": "get user members of a group"
+			},
+			"response": []
+		}
+	]
+}
